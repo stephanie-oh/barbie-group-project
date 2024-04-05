@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    padding: 1vw;
+}
+
+.nav-links, .footer-links, .legal-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-links li, .footer-links li, .legal-links li {
+    margin-left: 2vw;
+}
+
+.nav-links a, .footer-links a, .legal-links a {
+    text-decoration: none;
+    color: white;
+    font-size: calc(10px + 1vw); /* Responsive font size */
+}
+
+.hero-image {
+    height: 100vh; /* Full viewport height */
+    background-image: url('your-hero-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px;
+    padding: 0.3vw;
+}
+
+.grid div {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Responsive height */
+}
+
+footer {
+    height: 393px; /* Consider making this responsive if needed */
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: calc(8px + 0.5vw); /* Responsive font size */
+}
+
+.legal-links {
+    margin-top: 20px;
+}
+
+.legal-links li {
+    margin: 0 10px;
+}
+
+.legal-links a {
+    font-size: calc(8px + 0.5vw); /* Responsive font size */
+}
