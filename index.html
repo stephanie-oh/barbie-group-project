@@ -3,45 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>The Barbie Project</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">Logo Here</div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">                <img src="imgs/barbie_logo.png" alt=""></a></div>
             <ul class="nav-links">
+                <li><a href="dolls.html">Dolls</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="history.html">History</a></li>
+            </ul>
+        </nav>        
+        <div class="hero-image">
+            <img src="imgs/barbie websiteup.png" alt="">
+        </div>
+    </header>
+    <section class="flex-container">
+        <div class="flex-item">
+            <img src="imgs/dolls.jpg" alt="">
+            <p class="overlay-text">dolls</p>
+        </div>
+        <div class="flex-item">
+            <img src="imgs/gallery.jpg" alt="">
+            <p class="overlay-text">gallery</p>
+        </div>
+        <div class="flex-item">
+            <img src="imgs/news.jpg" alt="">
+            <p class="overlay-text">news</p>
+        </div>
+        <div class="flex-item">
+            <img src="imgs/Ruth_Handler_in_1961.jpg" alt="">
+            <p class="overlay-text">history</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <nav>
                 <li><a href="#dolls">Dolls</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#history">History</a></li>
+            </nav>
+        </div>
+        <div class="socials">
+            
+        </div>
+        <div class="legals">
+            <img src="imgs/barbie_logo3.png" alt="" class="footer-logo">
+            <p>&copy; 2024, Mattel Inc. All Rights Reserved.</p>
+            <ul>
+                <li>privacy policy</li>
+                <li>sitemap</li>
+                <li>accessibility</li>
+                <li>terms of use</li>
             </ul>
-        </nav>
-        <div class="hero-image"></div>
-    </header>
-
-    <section class="grid">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-    </section>
-
-    <footer>
-        <ul class="footer-links">
-            <li><a href="#dolls">Dolls</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#history">History</a></li>
-        </ul>
-        <p>Copyright &copy; 2023. All Rights Reserved.</p>
-        <ul class="legal-links">
-            <li><a href="#privacy">Privacy Policy</a></li>
-            <li><a href="#sitemap">Sitemap</a></li>
-            <li><a href="#accessibility">Accessibility</a></li>
-            <li><a href="#terms">Terms of Use</a></li>
-        </ul>
+        </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

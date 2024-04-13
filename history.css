@@ -1,0 +1,280 @@
+.Barbie-Pink-1-hex { color: #F25EA3; }
+.Barbie-Pink-2-hex { color: #F291C7; }
+.Barbie-Pink-3-hex { color: #F2B6D7; }
+.Barbie-Pink-4-hex { color: #F2C9E0; }
+.Barbie-Pink-5-hex { color: #D92399; }
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, sans-serif; */
+  /* background-color: #030201; */
+  font: 14px/1.36 sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  left: 50%;
+  display: flex;
+}
+
+.logo .desktop {
+  height: calc(40px + 1vw);
+}
+
+.logo .mobile {
+  display: none;
+}
+
+.nav-links,
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  font-size: calc(9px / 1vw);
+  line-height: calc(10px - 1vw);
+}
+
+.nav-links a,
+.footer-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.hero-image .desktop {
+  height: 580px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: calc(55vw - 1vw);
+}
+
+.hero-image {
+  z-index: 1;
+  position: relative;
+}
+
+.media-object {
+  margin: 10px;
+}
+
+.media-object,
+.media-object-bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+  min-width: 50%;
+}
+.media-object-img {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.media-object-img img {
+  display: block;
+}
+.media-object-imgExt {
+  float: right;
+  margin-left: 10px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 2px solid #F25EA3;
+}
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.timeline li {
+  min-height: 80px;
+}
+.timeline-item {
+  position: relative;
+  width: 50%;
+}
+
+.timeline-column-left {
+  clear: left;
+}
+.timeline-column-left .timeline-item {
+  float: left;
+}
+.timeline-column-right {
+  clear: right;
+}
+.timeline-column-right .timeline-item {
+  float: right;
+}
+
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  border-top: 2px solid #F25EA3;
+  width: 20px;
+}
+.timeline-column-left .timeline-item:before {
+  right: 0;
+}
+.timeline-column-right .timeline-item:before {
+  left: 0;
+}
+.timeline-column-left .media-object {
+  margin-right: 30px;
+}
+.timeline-column-right .media-object {
+  margin-left: 30px;
+}
+.timeline-column-left .media-object-img {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.timeline-item .media-object-bd {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.timeline-column-right-join {
+  margin-top: -80px;
+}
+
+footer {
+  height: 253px;
+  background-color: #030201;
+  background-image: url("imgs/barbie\ footer.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links nav {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left: 0%;
+}
+
+.footer-links li {
+  list-style-type: none;
+  margin: 5px;
+  font-size: calc(10px * 1vw);
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.legals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 0.6rem;
+}
+
+.legals ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin-top: -10px;
+}
+
+.legals img {
+  height: 25px;
+  margin-bottom: 1px;
+}
+
+.legals li {
+  margin: 10px;
+  padding: 0;
+}
+
+.hero-image .mobile {
+  width: 100%;
+  height: 50vw;
+  max-height: 650px;
+  background-size: cover;
+  background-position: center;
+  display: none;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .logo .desktop {
+    display: none;
+  }
+
+  .hero-image .desktop {
+    display: none;
+  }
+
+  .logo .mobile {
+    left: 50%;
+    display: flex;
+    height: calc(55px + 1vw);
+  }
+
+  .hero-image .mobile {
+    display: block;
+    height: 200vw;
+    max-height: 700px;
+  }
+}
