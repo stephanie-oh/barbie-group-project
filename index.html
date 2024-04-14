@@ -4,29 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Barbie Project</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">                <img src="imgs/barbie_logo.png" alt=""></a></div>
-            <ul class="nav-links">
-                <li><a href="dolls.html">Dolls</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="history.html">History</a></li>
-            </ul>
-        </nav>        
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="logo">
+                    <a href="index.html">
+                      <img class="desktop" src="imgs/barbie_logo.png" alt="Desktop Logo">
+                    </a>
+                    <a href="index.html">
+                      <img class="mobile" src="imgs/barbie_logo2.png" alt="Mobile Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <div class="nav-links">
+              <a href="gallery.html"><img src="imgs/Gallery.png" alt=""></a>
+              <a href="news.html"><img src="imgs/News-2024-04-11.png" alt=""></a>
+              <a href="history.html"><img src="imgs/History.png" alt=""></a>
+            </div>
+        </div>   
         <div class="hero-image">
-            <img src="imgs/barbie websiteup.png" alt="">
+            <img class="desktop" src="imgs/barbie websiteup.png" alt="">
+            <img class="mobile" src="imgs/barbie splash.png" alt="">
         </div>
     </header>
     <section class="flex-container">
-        <div class="flex-item">
-            <img src="imgs/dolls.jpg" alt="">
-            <p class="overlay-text">dolls</p>
-        </div>
         <div class="flex-item">
             <img src="imgs/gallery.jpg" alt="">
             <p class="overlay-text">gallery</p>
@@ -40,18 +53,28 @@
             <p class="overlay-text">history</p>
         </div>
     </section>
-
     <footer>
         <div class="footer-links">
             <nav>
-                <li><a href="#dolls">Dolls</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#history">History</a></li>
+              <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="history.html">History</a></li>
             </nav>
         </div>
-        <div class="socials">
-            
+        <div class="media-links">
+          <a href="https://www.instagram.com/barbie/?hl=en" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/barbie?lang=en" target="_blank">
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.facebook.com/barbie/" target="_blank">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+              <i class="fa fa-snapchat-square" aria-hidden="true"></i>
+          </a>
         </div>
         <div class="legals">
             <img src="imgs/barbie_logo3.png" alt="" class="footer-logo">

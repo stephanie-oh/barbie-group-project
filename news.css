@@ -31,50 +31,68 @@ section p::first-letter {
   line-height: 80%;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.nav {
+  height: auto;
+  width: 100%;
   background-color: transparent;
-  color: white;
-  padding: 20px;
-}
-
-.logo {
-  left: 50%;
-  display: flex;
+  position: absolute;
+  z-index: 100;
 }
 
 .logo .desktop {
-  height: calc(40px + 1vw);
+  margin-left: 10px;
+  margin-top: 4px;
+  height: calc(32px + 1vw);
 }
 
 .logo .mobile {
   display: none;
 }
 
-.nav-links, .footer-links {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+.nav > .nav-header {
+  display: inline;
 }
 
-.nav-links li {
-  margin-left: 20px;
-  font-size: calc(9px / 1vw);
-  line-height: calc(10px - 1vw);
+.nav > .nav-header > .logo {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
 }
 
-.nav-links a, .footer-links a {
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav-links {
+  margin-top: 10.5px;
+  margin-right: 15px;
+}
+
+.nav-links img {
+    height: 35px;
+    display: flex;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: white;
+  color: #efefef;
 }
 
-.navbar {
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 10;
+.nav > .nav-links > a:hover {
+  transform: translate(2px, -2px);
+}
+
+.nav > #nav-check {
+  display: none;
 }
 
 .hero-image .desktop {
@@ -142,7 +160,7 @@ section {
 footer {
   height: 253px;
   background-color: #030201;
-  background-image: url('imgs/barbie\ footer.png');
+  background-image: url("imgs/barbie\ footer.png");
   background-position: center;
   background-size: cover;
   color: white;
@@ -152,8 +170,26 @@ footer {
   align-items: center;
 }
 
+.media-links {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0%;
+    font-size: calc(25px + 0.1vw);
+    margin-right: 20px;
+}
+
+.media-links i {
+    margin-bottom: 10px;
+}
+
+.media-links a {
+    color: #F2509C;
+}
+
 .footer-links nav {
-  margin-top: 20px;
+  margin-top: 35px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -163,8 +199,10 @@ footer {
 
 .footer-links li {
   list-style-type: none;
-  margin: 5px;
-  font-size: calc(10px * 1vw);
+  margin: 13px;
+  margin-left: 20px;
+  line-height: calc(10px - 1vw);
+  font-size: calc(13px + 0.1vw);
 }
 
 .footer-links a {
@@ -173,13 +211,12 @@ footer {
 }
 
 .legals {
-  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   margin-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 0.6rem;
 }
 
@@ -196,12 +233,12 @@ footer {
   justify-content: center;
   text-align: center;
   padding: 0;
-  margin-top: -10px;
+  margin-top: -13px;
 }
 
 .legals img {
   height: 25px;
-  margin-bottom: 1px;
+  margin-bottom: -5px;
 }
 
 .legals li {
@@ -248,7 +285,7 @@ footer {
   .logo .mobile {
       left: 50%;
       display: flex;
-      height: calc(55px + 1vw);
+      height: calc(40px + 1vw);
   }
   
   .hero-image .desktop {
@@ -285,7 +322,7 @@ footer {
   .logo .mobile {
       left: 50%;
       display: flex;
-      height: calc(55px + 1vw);
+      height: calc(40px + 1vw);
   }
   
   .hero-image .mobile {
@@ -294,6 +331,66 @@ footer {
       max-height: 700px;
   }
 
+  .nav {
+    background-color: #F2DFEA;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 26px;
+    height: 25px;
+    padding-top: 10px;
+    margin-right: 15px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    cursor: pointer;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 8px;
+    border-top: 2.5px solid #F2509C;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin-top: 0px;
+    background-color: #F2DFEA;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .nav > .nav-links > a:hover {
+    transform: none;
+  }
+
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: 220px;
+    overflow-y: auto;
+  }
+  
   section {
     column-count: 1;
   }
