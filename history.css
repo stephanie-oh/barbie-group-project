@@ -1,26 +1,24 @@
-.Barbie-Pink-1-hex {
-  color: #f25ea3;
-}
-.Barbie-Pink-2-hex {
-  color: #f291c7;
-}
-.Barbie-Pink-3-hex {
-  color: #f2b6d7;
-}
-.Barbie-Pink-4-hex {
-  color: #f2c9e0;
-}
-.Barbie-Pink-5-hex {
-  color: #d92399;
-}
+/* Color Theme Swatches in Hex */
+.color-theme_barbie-splash-1-hex { color: #F2509C; }
+.color-theme_barbie-splash-2-hex { color: #D982AB; }
+.color-theme_barbie-splash-3-hex { color: #F21D92; }
+.color-theme_barbie-splash-4-hex { color: #8C3063; }
+.color-theme_barbie-splash-5-hex { color: #F2DCE8; }
 
 body,
 html {
   margin: 0;
   padding: 0;
   /* font-family: Arial, sans-serif; */
-  /* background-color: #030201; */
+  background-color: #F2DCE8;
   font: 14px/1.36 sans-serif;
+}
+
+h1, 
+h2, 
+p {
+  font-family: "Playfair Display", serif;
+  color: #F21D92;
 }
 
 .nav {
@@ -230,8 +228,6 @@ html {
 
 .text-left,
 .text-right {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
   flex: 1;
   padding: 0 20px;
 }
@@ -303,6 +299,7 @@ footer {
   font-size: 0.6rem;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 5px;
+  color: #fff;
 }
 
 .legals ul {
